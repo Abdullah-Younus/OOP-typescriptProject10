@@ -5,15 +5,13 @@ export class Person {
     constructor() {
         this.personality = "MyStery"
     }
-
-
     public AskQuestion(answer: number): void {
         if (answer == 1) {
             this.personality = "Extravert"
         }
         else if (answer == 2) {
             this.personality = "Introvert"
-        } 
+        }
         else {
             this.personality = "You are Still a Mystery"
         }
@@ -22,6 +20,5 @@ export class Person {
     public GetPersonlity(): string {
         return this.personality;
     }
-
 
 }
